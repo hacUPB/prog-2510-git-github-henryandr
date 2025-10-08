@@ -4,6 +4,8 @@ coordenada = ()
 
 # Tupla con elementos
 coordenada = (33.9425, -118.4081)  # LAX (Aeropuerto de Los Ángeles)
+# coordenada[0] = 43.9  Es un error porque la tupla es inmutable
+print(coordenada)
 
 # Tupla con un solo elemento (requiere coma al final)
 rumbo = (270,)  # Sin la coma sería tratado como un entero entre paréntesis
@@ -26,27 +28,26 @@ print(f"El {fabricante} {modelo} se lanzó en {año}")
 lat, lon = coordenada
 print(f"Latitud: {lat}, Longitud: {lon}")
 '''
-lista = [1,3,4,9]
-lista[0] = 5
+lista = [7,4,9]
+lista[0] = 65
 
-lista_de_tuplas = [(0,0), (4,5), (5,0)]
-lista_de_tuplas.append((9,4))
+lista_de_tuplas = [(0,0), (3,5), (8,3)]
+print(lista_de_tuplas)
+lista_de_tuplas.append((45,6))
 print(lista_de_tuplas)
 lista_de_tuplas[0] = (1,1)
 print(lista_de_tuplas)
+lista_de_tuplas[2] = "palabra"
+print(lista_de_tuplas)
 
-tupla_de_listas = ([1,4,6], [9,7,0])
+tupla_de_listas = ([2,4,3], [9,6,12])
 print(tupla_de_listas)
-tupla_de_listas[0][0] = 10
+tupla_de_listas[1][0] = 18
 print(tupla_de_listas)
-#tupla_de_listas[0] = [4,3,1]   Error de asignación
-numeros = (3, 12, 90, 45, 32)
 
-for n in numeros:
-    print(n)
+numeros = (2, 34, 56, 12, 4)
 
-#Condicionales con listas y tuplas
 if 12 in numeros:
-    print("El 12 es parte de la tupla")
+    print("El 12 esrá en la tupla")
 else:
-    print("No se encuentra el 12")
+    print("Valor no encontrado")
